@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Webpage</title>
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+      gap: 10px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      grid-column: 1 / span 3;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      background-color: #3366CC;
+      color: #FFF;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      grid-column: 1;
+      background-color: #FFD700;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    main {
+      grid-column: 2;
+      text-align: center;
+      background-color: #7eebf9;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    aside {
+      grid-column: 3;
+      background-color: #FFA07A;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    video, audio {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    footer {
+      grid-column: 1 / span 3;
+      text-align: center;
+      padding: 10px;
+      background-color: #444;
+      color: #FFF;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+   
+    audio::-webkit-media-controls-panel,
+    video::-webkit-media-controls-panel {
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+
+    audio::-webkit-media-controls-play-button,
+    video::-webkit-media-controls-play-button {
+      color: #3366CC;
+    }
+
+     
+    nav ul li a:hover {
+      background-color: #FFD700;
+      color: #333;
+      padding: 6px 12px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>Explore The World of Artificial Intelligence</header>
+
+  <nav>
+    <h3>Contents:</h3>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Introduction To AI</a></li>
+      <li><a href="#">Literature</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    <h2>Video</h2>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </main>
+
+  <aside>
+    <h3>Remarks:</h3>
+    <p><b>Audio Remarks:</b> <br> The audio clip discusses the future of AI in education, emphasizing how it can personalize learning experiences and promote student success.</p>
+    <p><b>Video Remarks:</b><br>The video provides an insightful overview of Artificial Intelligence (AI) technologies, showcasing its immense potential in transforming various industries.</p>
+  </aside>
+
+  <footer>Life is better with AI.</footer>
+</body>
+</html>

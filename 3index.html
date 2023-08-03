@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Capital Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(0deg, rgb(138, 77, 235) , rgb(245, 186, 198));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #f3eebf;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            padding: 60px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        select {
+            width: 150%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Country Capital Selector</h1>
+
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <label for="countrySelect">Select a country:</label>
+            <select id="countrySelect">
+                <option value="" disabled selected>Select a country</option>
+                <option value="USA">United States</option>
+                <option value="CAN">Canada</option>
+                <option value="UK">United Kingdom</option>
+                <option value="AUS">Australia</option>
+                <option value="GER">Germany</option>
+            </select>
+        </div>
+
+        <p id="capital"></p>
+    </div>
+
+    <script>
+        
+        function updateCapital() {
+            const selectElement = document.getElementById('countrySelect');
+            const selectedCountry = selectElement.value;
+            let capital = '';
+
+            switch (selectedCountry) {
+                case 'USA':
+                    capital = 'Washington, D.C.';
+                    break;
+                case 'CAN':
+                    capital = 'Ottawa';
+                    break;
+                case 'UK':
+                    capital = 'London';
+                    break;
+                case 'AUS':
+                    capital = 'Canberra';
+                    break;
+                case 'GER':
+                    capital = 'Berlin';
+                    break;
+                default:
+                    capital = '';
+                    break;
+            }
+
+            document.getElementById('capital').textContent = capital;
+        }
+
+         
+        document.getElementById('countrySelect').addEventListener('change', updateCapital);
+    </script>
+</body>
+</html>

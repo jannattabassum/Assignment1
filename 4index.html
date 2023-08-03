@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+             
+        }
+
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 24px;
+        }
+
+        table {
+            width: 40%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            border: 1px solid #000;  
+        }
+
+        th {
+            text-align: right;
+            background-color: rgb(147, 222, 247);
+            padding: 15px;
+            border: 1px solid #000;  
+        }
+
+        td {
+            text-align: left;
+            padding: 15px;
+            border: 1px solid #000;  
+        }
+
+        #college-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: 90px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personal Details</h1>
+    <img id="college-logo" src="logo1.png" alt="College Logo">
+
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <th>Class:</th>
+            <td><input type="text" name="class"></td>
+        </tr>
+        <tr>
+            <th>Faculty:</th>
+            <td><input type="text" name="class"></td>
+        </tr>
+        <tr>
+            <th>ID:</th>
+            <td><input type="text" name="faculty"></td>
+        </tr>
+        <tr>
+            <th>Qualifications:</th>
+            <td><textarea name="qualifications" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <th>Photo:</th>
+            <td><input type="file" name="photo"></td>
+        </tr>
+        <tr>
+            <th>Address:</th>
+            <td><textarea name="address" rows="4" cols="30"></textarea></td>
+        </tr>
+    </table>
+</body>
+</html>
